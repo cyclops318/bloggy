@@ -24,7 +24,7 @@ export const getStaticProps = async ({ params: { slug } }) => {
 
 const BlogPage = ({ post }) => {
   return (
-    <Page title={post.title + ' - Bloggy'}>
+    <Page title={post.title}>
       <Image
         className='object-cover h-52 w-full rounded-md'
         src={post.coverPhoto.url}
