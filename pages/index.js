@@ -7,10 +7,8 @@ export async function getStaticProps() {
   const { posts } = await graphcms.request(GET_ALL_POSTS);
 
   return {
-    props: {
-      posts,
-    },
-    revalidate: 10,
+    props: { posts },
+    revalidate: 30,
   };
 }
 
